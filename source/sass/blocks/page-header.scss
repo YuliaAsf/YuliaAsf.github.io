@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 550px;
   background-color: $color-dark-blue;
-  background-image: url("img/pictures/intro-background.jpg");
+  background-image: url("../img/pictures/intro-background.jpg");
 
   @include background;
   background-size: cover;
@@ -10,7 +10,7 @@
   content: "";
 
   @media (min-resolution: 2dppx) {
-    background-image: url("img/pictures/intro-background@2x.jpg");
+    background-image: url("../img/pictures/intro-background@2x.jpg");
   }
 
   @media (max-width: $vp-320) {
