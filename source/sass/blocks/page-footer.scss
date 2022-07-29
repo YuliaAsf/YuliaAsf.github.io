@@ -1,0 +1,119 @@
+.page-footer {
+  position: relative;
+  z-index: 2;
+  background-color: $color-dark-blue;
+}
+
+.page-footer__wrapper {
+  @include flex;
+  min-height: 138px;
+  padding: 48px 7.55vw;
+  padding-bottom: 38px;
+
+
+  @media (max-width: $vp-768) {
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 120px;
+    padding: 50px 5.86vw;
+    padding-bottom: 18px;
+  }
+
+  @media (max-width: $vp-320) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 203px;
+    padding: 38px 15px;
+    padding-bottom: 28px;
+  }
+}
+
+.page-footer__wrapper > a {
+  margin-right: 30px;
+
+  @media (max-width: $vp-768) {
+    margin-right: 3.3vw;
+  }
+}
+
+.page-footer img {
+  margin-bottom: 10px;
+
+  @media (max-width: $vp-768) {
+    min-width: 38px;
+    max-width: 38px;
+    height: 20px;
+  }
+
+  @media (max-width: $vp-320) {
+    min-width: 42px;
+    max-width: 42px;
+    height: 22px;
+  }
+}
+
+.page-footer__navigation {
+  min-width: 52%;
+  margin-right: auto;
+
+  @media (max-width: $vp-768) {
+    max-width: 80%;
+  }
+
+
+  @media (max-width: $vp-320) {
+    display: block;
+    width: 220px;
+    margin: 0;
+  }
+}
+
+
+.page-footer__navigation ul {
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 10px;
+
+  @media (max-width: $vp-768) {
+    justify-content: flex-start;
+    margin-top: -8px;
+    margin-left: -10px;
+  }
+
+  @media (max-width: $vp-320) {
+    margin: 0;
+    margin-left: -5px;
+    padding: 15px 0;
+    padding-bottom: 12px;
+    min-height: 130px;
+    background-color: $color-dark-blue;
+  }
+}
+
+.page-footer__navigation li {
+  @media (max-width: $vp-768) {
+    margin-bottom: 6px;
+  }
+
+  @media (max-width: $vp-320) {
+    margin-bottom: 7px;
+  }
+}
+
+.page-footer__navigation a {
+  display: inline-block;
+  font-size: $fz-default;
+
+  @media (max-width: $vp-768) {
+    font-size: calc(1.05vw + 4px);
+    line-height: 15px;
+  }
+
+  @media (max-width: $vp-320) {
+    font-size: 12px;
+    line-height: 15px;
+    color: $color-default-white;
+  }
+}

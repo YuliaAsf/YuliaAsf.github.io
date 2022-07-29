@@ -1,0 +1,47 @@
+.social {
+  width: 9.6%;
+
+  @media (max-width: $vp-768) {
+    width: 15%;
+  }
+
+  @media (max-width: $vp-320) {
+    width: 100%;
+  }
+}
+
+.social ul {
+  @include flex;
+  flex-wrap: wrap;
+  width: 110px;
+
+  @include reset-list;
+
+  @media (max-width: $vp-768) {
+    width: 100%;
+  }
+
+  @media (max-width: $vp-320) {
+    width: 88px;
+  }
+}
+
+.social a {
+  @include flex;
+  margin-left: 5px;
+  margin-bottom: 10px;
+
+  @media (max-width: $vp-320) {
+    margin-left: 0;
+  }
+}
+
+.social a:nth-child(3n) {
+  margin-left: 0;
+}
+
+.social svg {
+  @media (max-width: $vp-768) {
+    transform: scale(0.8);
+  }
+}

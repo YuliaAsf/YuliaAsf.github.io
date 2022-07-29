@@ -1,0 +1,29 @@
+// Colors
+
+$color-default-black:               #011c40;
+$color-default-white:               #f9fbfd;
+$color-dark-blue:                   #011c40;
+$color-light-blue:                  #e3ecf6;
+$color-black-muted:                 rgba(0, 0, 0, 0.25);
+
+// Typography
+$fz-default:                        calc(0.66vw + 7px);
+$lh-default:                        24px;
+$ff-default:                        "Montserrat", "Tahoma", sans-serif;
+
+// Animation
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
+
+// Viewports
+$vp-320:                            320px;
+$vp-576:                            576px;
+$vp-768:                            768px;
+$vp-700:                            700px;
+$vp-992:                            992px;
+$vp-1366:                           1366px;
+
+
+// Retina
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

@@ -1,0 +1,17 @@
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%;
+  max-width: $vp-1366;
+  margin: 0 auto;
+  padding: 120px 7.55vw;
+
+  @media (max-width: $vp-768) {
+    padding: 100px 5.86vw;
+    padding-top: 100px;
+  }
+
+  @media (max-width: $vp-320) {
+    padding: 65px 15px;
+  }
+}
