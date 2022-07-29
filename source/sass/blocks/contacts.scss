@@ -87,7 +87,7 @@
 .contacts__information address {
   margin-bottom: 20px;
   font-style: normal;
-  background-image: url("/img/svg/address-icon.svg");
+  background-image: url("../img/svg/address-icon.svg");
   background-size: 18px 22px;
 
   @media (max-width: $vp-768) {
@@ -99,7 +99,7 @@
 .contacts__information a {
   display: block;
   margin-bottom: 43px;
-  background-image: url("/img/svg/phone-icon.svg");
+  background-image: url("../img/svg/phone-icon.svg");
   background-size: 18px 18px;
   background-position: top 52% left;
 

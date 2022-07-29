@@ -1,11 +1,11 @@
 .reservation {
   background-color: $color-light-blue;
-  background-image: url("/img/pictures/form-background.jpg");
+  background-image: url("../img/pictures/form-background.jpg");
 
   @include background;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/img/pictures/form-background@2x.jpg");
+    background-image: url("../img/pictures/form-background@2x.jpg");
   }
 }
 

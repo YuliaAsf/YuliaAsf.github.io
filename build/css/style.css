@@ -741,7 +741,7 @@ video {
 
 .advantages {
   background-color: #e3ecf6;
-  background-image: url("/img/pictures/advantages-background.png");
+  background-image: url("../img/pictures/advantages-background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -778,20 +778,20 @@ video {
 }
 
 .advantages__item--ship {
-  background-image: url("/img/svg/ship.svg");
+  background-image: url("../img/svg/ship.svg");
   background-size: 27px 32px;
   background-position: top 30px left 30px;
 }
 
 .advantages__item--meal {
   padding-right: 50px;
-  background-image: url("/img/svg/ticks.svg");
+  background-image: url("../img/svg/ticks.svg");
   background-size: 38px 21px;
   background-position: top 33px left 32px;
 }
 
 .advantages__item--boat {
-  background-image: url("/img/svg/boat.svg");
+  background-image: url("../img/svg/boat.svg");
   background-size: 45px 15px;
   background-position: top 34px left 30px;
 }
@@ -816,7 +816,7 @@ video {
 
 .reservation {
   background-color: #e3ecf6;
-  background-image: url("/img/pictures/form-background.jpg");
+  background-image: url("../img/pictures/form-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -951,7 +951,7 @@ form .reservation-form__checkbox-info::before {
 }
 
 form .reservation-form__input-checkbox:checked + .reservation-form__checkbox-info::before {
-  background-image: url("/img/svg/checkbox-tick.svg");
+  background-image: url("../img/svg/checkbox-tick.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1026,14 +1026,14 @@ form.reservation-form br {
 .contacts__information address {
   margin-bottom: 20px;
   font-style: normal;
-  background-image: url("/img/svg/address-icon.svg");
+  background-image: url("../img/svg/address-icon.svg");
   background-size: 18px 22px;
 }
 
 .contacts__information a {
   display: block;
   margin-bottom: 43px;
-  background-image: url("/img/svg/phone-icon.svg");
+  background-image: url("../img/svg/phone-icon.svg");
   background-size: 18px 18px;
   background-position: top 52% left;
 }
@@ -1667,7 +1667,7 @@ form.reservation-form br {
     -ms-flex-item-align: start;
     align-self: flex-start;
     background-color: transparent;
-    background-image: url("/img/svg/burger-button.svg");
+    background-image: url("../img/svg/burger-button.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1679,7 +1679,7 @@ form.reservation-form br {
     display: block;
     top: 20px;
     right: 20px;
-    background-image: url("/img/svg/close-button.svg");
+    background-image: url("../img/svg/close-button.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -2040,10 +2040,10 @@ form.reservation-form br {
   }
 
   .advantages {
-    background-image: url("/img/pictures/advantages-background@2x.png");
+    background-image: url("../img/pictures/advantages-background@2x.png");
   }
 
   .reservation {
-    background-image: url("/img/pictures/form-background@2x.jpg");
+    background-image: url("../img/pictures/form-background@2x.jpg");
   }
 }

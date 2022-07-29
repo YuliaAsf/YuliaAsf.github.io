@@ -112,7 +112,7 @@ form .reservation-form__checkbox-info::before {
 }
 
 form .reservation-form__input-checkbox:checked + .reservation-form__checkbox-info::before {
-  background-image: url("/img/svg/checkbox-tick.svg");
+  background-image: url("../img/svg/checkbox-tick.svg");
 
   @include background;
   background-size: 10px 6px;
