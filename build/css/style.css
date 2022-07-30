@@ -1033,6 +1033,7 @@ form.reservation-form br {
 .contacts__information a {
   display: block;
   margin-bottom: 43px;
+  margin-right: 270px;
   background-image: url("../img/svg/phone-icon.svg");
   background-size: 18px 18px;
   background-position: top 52% left;
