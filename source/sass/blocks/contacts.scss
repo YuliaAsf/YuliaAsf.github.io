@@ -1,5 +1,6 @@
 .contacts__wrapper {
   @include flex;
+  flex-direction: row-reverse;
 
   @media (max-width: $vp-320) {
     flex-direction: column-reverse;
