@@ -1,14 +1,16 @@
 .intro__wrapper {
   min-height: 540px;
-  padding: 160px 198px;
+  padding: 160px calc(4vw + 144px);
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1023) {
     min-height: 545px;
+    padding: 210px 5.86vw;
     padding-top: 175px;
   }
 
-  @media (max-width: $vp-320) {
-    min-height: 350px;
+  @media (max-width: $vp-767) {
+    min-height: 239px;
+    padding: 0 4.8vw;
     padding-top: 108px;
   }
 }
@@ -23,17 +25,19 @@
 }
 
 .intro h1 {
-  margin-bottom: 11px;
-  font-size: calc(2.12vw + 25px);
+  margin-bottom: 0.96vw;
+  font-size: calc(1.2vw + 37.5px);
   line-height: 66px;
   font-weight: 700;
 
-  @media (max-width: $vp-768) {
-    font-size: calc(5.2vw + 10px);
+  @media (max-width: $vp-1023) {
+    margin-bottom: 10px;
+    font-size: 50px;
     line-height: 61px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
+    width: 265px;
     margin-bottom: 10px;
     font-size: 36px;
     line-height: 45px;
@@ -41,15 +45,15 @@
 }
 
 .intro p {
-  font-size: calc(1vw + 6.28px);
-  line-height: 25px;
+  font-size: calc(1vw + 6.3px);
+  line-height: 24px;
 
-  @media (max-width: $vp-768) {
-    font-size: calc(1.5vw + 6.5px);
+  @media (max-width: $vp-1023) {
+    font-size: 18px;
     line-height: 22px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     width: 199px;
     font-size: 16px;
     line-height: 22px;

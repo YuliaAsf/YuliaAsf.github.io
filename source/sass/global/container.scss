@@ -6,12 +6,12 @@
   margin: 0 auto;
   padding: 120px 7.55vw;
 
-  @media (max-width: $vp-768) {
-    padding: 100px 5.86vw;
+  @media (max-width: $vp-1023) {
+    padding: 100px 5.85vw;
     padding-top: 100px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     padding: 65px 15px;
   }
 }

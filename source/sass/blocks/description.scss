@@ -1,13 +1,15 @@
 .description__wrapper {
   @include flex;
+  padding: 120px calc(6vw + 22px);
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1023) {
     align-items: flex-start;
-    padding-bottom: 91px;
+    padding: 100px calc(5vw + 6.6px);
+    padding-bottom: 93px;
   }
-
-  @media (max-width: $vp-700) {
+  @media (max-width: $vp-767) {
     flex-direction: column;
+    padding: 65px 4.7vw;
   }
 }
 
@@ -16,17 +18,12 @@
   width: 45%;
   margin-right: 2vw;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1023) {
     width: 48%;
     margin-right: 30px;
   }
 
-  @media (max-width: $vp-700) {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     width: 100%;
     margin-bottom: 0;
   }
@@ -34,38 +31,40 @@
 
 .description h2 {
   margin: 0;
-  margin-bottom: 1.64vw;
-  padding-top: 55px;
-  font-size: calc(1vw + 14.5px);
-  line-height: 3.1vw;
+  margin-bottom: 28px;
+  padding-top: 58px;
+  font-size: calc(0.45vw + 22px);
+  line-height: 36px;
   font-weight: 600;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1023) {
     width: 64%;
     margin-top: -10px;
     margin-bottom: 17px;
     padding-top: 0;
-    font-size: calc(1.83vw + 12px);
-    line-height: calc(2vh + 24px);
+    font-size: 26px;
+    line-height: 36px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     width: 70%;
-    margin-bottom: 11px;
+    margin-bottom: 13px;
     font-size: 24px;
+    line-height: 35px;
   }
 }
 
 .description p {
   margin: 0;
+  font-size: calc(0.3vw + 11.9px);
 
-  @media (max-width: $vp-768) {
-    font-size: calc(1vw + 8.4px);
+  @media (max-width: $vp-1023) {
+    font-size: calc(0.5vw + 12.2px);
     line-height: 24px;
   }
 
-  @media (max-width: $vp-320) {
-    margin-bottom: 33px;
+  @media (max-width: $vp-767) {
+    margin-bottom: 35px;
     font-size: 16px;
   }
 }
@@ -73,30 +72,33 @@
 .description__image-wrapper {
   min-width: 48.5%;
   max-width: 48.5%;
-  height: 301px;
+  height: 100%;
   position: relative;
   overflow: hidden;
+  align-self: flex-end;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1023) {
+    align-self: flex-start;
     min-width: 47.9%;
     max-width: 47.9%;
     height: 264px;
   }
 
-  @media (max-width: $vp-700) {
-    max-width: 100%;
-    height: auto;
-  }
-
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
+    display: flex;
+    justify-content: center;
+    min-width: 290px;
+    max-width: 290px;
     height: 186px;
+    margin: 0 auto;
   }
 }
 
 .description img {
   object-fit: contain;
+  height: 100%;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1023) {
     object-fit: cover;
   }
 }

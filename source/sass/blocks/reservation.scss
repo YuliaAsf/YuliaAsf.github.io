@@ -10,16 +10,20 @@
 }
 
 .reservation__wrapper {
+  padding: 50px 163px;
   @include flex;
-  padding: 50px 12vw;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1366) {
+  padding: 50px 11.9vw;
+  }
+
+  @media (max-width: $vp-1023) {
     flex-direction: column;
     padding: 100px 13vw;
     padding-top: 83px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     padding: 60px 15px;
     padding-bottom: 65px;
   }
@@ -29,11 +33,16 @@
   margin: 0;
   margin-bottom: 14px;
   padding-top: 166px;
-  font-size: calc(2vw + 12.6px);
-  line-height: calc(3vw + 10px);
+  font-size: 40px;
+  line-height: 60px;
   font-weight: 700;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1366) {
+    font-size: 2.92vw;
+    line-height: calc(3vw + 10px);
+  }
+
+  @media (max-width: $vp-1023) {
     margin-bottom: 5px;
     padding-top: 5px;
     font-size: calc(3vw + 11px);
@@ -41,7 +50,7 @@
     text-align: center;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     padding: 0;
     margin-bottom: 12px;
     font-size: 24px;
@@ -53,7 +62,11 @@
   align-self: flex-start;
   margin-right: 30px;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1366) {
+    margin-right: 2.2vw;
+  }
+
+  @media (max-width: $vp-1023) {
     justify-content: flex-start;
     align-self: center;
     margin: 0;
@@ -63,17 +76,18 @@
 .reservation__content-wrapper p {
   max-width: 352px;
   margin: 0;
-  font-size: calc(0.59vw + 10px);
   line-height: 27px;
+  font-size: calc(0.59vw + 10px);
 
-  @media (max-width: $vp-768) {
+
+  @media (max-width: $vp-1023) {
     margin: 0 auto;
     margin-bottom: 53px;
     font-size: calc(0.8vw + 12px);
     text-align: center;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     width: 257px;
     margin-bottom: 35px;
     font-size: 16px;

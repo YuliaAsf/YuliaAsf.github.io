@@ -2,13 +2,15 @@
   min-width: 53%;
   margin-right: -10px;
 
-  @media (max-width: $vp-768) {
+
+  @media (max-width: $vp-1023) {
     min-width: 77%;
+    margin-right: -5px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     display: none;
-    width: 285px;
+    min-width: 285px;
   }
 }
 
@@ -17,24 +19,29 @@
   z-index: 2;
 
   @include flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   flex-wrap: wrap;
 
   @include reset-list;
+  padding-right: 10px;
 
-  @media (max-width: $vp-320) {
+  @media(max-width:$vp-1023) {
+    padding-right: 7px;
+  }
+
+  @media (max-width: $vp-767) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     min-height: 418px;
-    margin-right: -5px;
+    margin-right: -10px;
     padding: 75px 25px;
     background-color: $color-default-white;
   }
 }
 
 .page-header__navigation {
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     box-shadow: 0 4px 4px $color-black-muted;
   }
 }
@@ -42,12 +49,12 @@
 .navigation li {
   margin-right: 13px;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1023) {
     margin-right: 3px;
     margin-bottom: 15px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     margin-bottom: 18px;
     margin-right: 0;
   }
@@ -60,19 +67,17 @@
 .navigation a {
   padding: 10px;
   font-weight: 500;
+  font-size: calc(0.44vw + 10px);
   line-height: 19.5px;
   color: $color-default-white;
 
-  @media (max-width: $vp-768) {
-    font-size: calc(0.92vw + 7px);
+  @media (max-width: $vp-1023) {
+    font-size: 14px;
     line-height: 17px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     font-size: 12px;
-  }
-
-  @media (max-width: $vp-320) {
     padding: 5px;
     font-size: 18px;
     line-height: 22px;

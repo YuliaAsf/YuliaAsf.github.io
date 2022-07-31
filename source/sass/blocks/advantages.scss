@@ -9,6 +9,12 @@
   }
 }
 
+.advantages__wrapper {
+  @media (max-width: $vp-1023) {
+    padding-top: 98px;
+  }
+}
+
 .advantages h2 {
   margin: 0;
   margin-bottom: 57px;
@@ -16,12 +22,12 @@
   font-weight: 600;
   text-align: center;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1023) {
     font-size: 26px;
     margin-bottom: 56px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     margin-bottom: 35px;
     font-size: 24px;
   }
@@ -30,21 +36,19 @@
 .advantages ul {
   display: grid;
   grid-template-columns: 31% 31% 31%;
-  gap: 2.9vw;
+  gap: 41px;
 
   @include reset-list;
 
-  @media (max-width: $vp-768) {
-    gap: 3.3vw;
+  @media (max-width: $vp-1023) {
+    grid-template-columns: 30.36% 30.36% 30.36%;
+    gap: 30px;
   }
 
-  @media (max-width: $vp-576) {
+  @media (max-width: $vp-767) {
     grid-template-columns: 1fr;
     justify-items: center;
-  }
-
-  @media (max-width: $vp-320) {
-    gap: 33px;
+    gap: 30px;
   }
 }
 
@@ -56,13 +60,12 @@
 
   @include background;
 
-  @media (max-width: $vp-768) {
-    padding: 70px 1.2vw 20px 2.5vw;
-    max-width: 206px;
+  @media (max-width: $vp-1023) {
+    padding: 70px 12px 20px 21px;
   }
 
-  @media (max-width: $vp-320) {
-    max-width: 100%;
+  @media (max-width: $vp-767) {
+    width: 100%;
     padding: 70px 16px 20px 20px;
   }
 }
@@ -72,7 +75,7 @@
   background-size: 27px 32px;
   background-position: top 30px left 30px;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1023) {
     background-size: 21px 26px;
     background-position: top 25px left 20px;
   }
@@ -82,15 +85,15 @@
   padding-right: 50px;
   background-image: url("../img/svg/ticks.svg");
   background-size: 38px 21px;
-  background-position: top 33px left 32px;
+  background-position: top 33px left 29px;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1023) {
     padding-right: 10px;
     background-size: 33px 19px;
     background-position: top 30px left 20px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     padding-right: 48px;
   }
 }
@@ -98,15 +101,15 @@
 .advantages__item--boat {
   background-image: url("../img/svg/boat.svg");
   background-size: 45px 15px;
-  background-position: top 34px left 30px;
+  background-position: top 38px left 30px;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1023) {
     padding-right: 17px;
     background-size: 38px 13px;
     background-position: top 32px left 20px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     padding-top: 72px;
   }
 }
@@ -118,52 +121,49 @@
   line-height: 27px;
   font-weight: 500;
 
-  @media (max-width: $vp-768) {
-    font-size: calc(1.9vw + 4px);
+  @media (max-width: $vp-1023) {
+    margin-bottom: 10px;
+    font-size: 18px;
     line-height: 25px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     font-size: 18px;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
   }
 }
 
 .advantages__item--ship h3 {
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     width: 200px;
   }
 }
 
 .advantages__item--ship p {
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1023) {
     min-width: 151px;
   }
 }
 
 .advantages__item--meal h3 {
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     max-width: 133px;
   }
 }
 
 .advantages__item--boat h3 {
-  @media (max-width: $vp-576) {
+  @media (max-width: $vp-767) {
     max-width: 151px;
-    margin-top: -3px;
   }
 }
+
 
 .advantages p {
   margin: 0;
   font-size: calc(0.3vw + 10px);
   line-height: 20px;
 
-  @media (max-width: $vp-768) {
-    font-size: calc(0.7vw + 8.7px);
-  }
-
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-1023) {
     font-size: 14px;
   }
 }
@@ -171,7 +171,7 @@
 .advantages__item--boat p {
   max-width: 241px;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1023) {
     max-width: 100%;
   }
 }
@@ -181,7 +181,7 @@
     display: none;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     display: block;
   }
 }

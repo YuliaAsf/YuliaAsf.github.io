@@ -1,5 +1,19 @@
 .catalog__wrapper {
-  padding: 120px 8.63vw;
+  padding: 120px 118px;
+
+  @media (max-width: $vp-1366) {
+    padding: 120px 8.63vw;
+  }
+
+  @media (max-width: $vp-1023) {
+    padding: 100px 7.85vw;
+    padding-top: 98px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 65px 25px;
+    padding-top: 63px;
+  }
 }
 
 .catalog h2 {
@@ -10,13 +24,13 @@
   font-weight: 600;
   text-align: center;
 
-  @media (max-width: $vp-768) {
-    margin-bottom: 56px;
+  @media (max-width: $vp-1023) {
+    margin-bottom: 58px;
     font-size: 26px;
     line-height: 22px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     margin-bottom: 37px;
     font-size: 24px;
   }
@@ -24,32 +38,59 @@
 
 .catalog ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 260px);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   gap: 30px;
-
   @include reset-list;
 
-  @media (max-width: $vp-768) {
-    grid-template-columns: repeat(auto-fill, 309px);
+  @media (max-width: $vp-1366) {
+    gap: 2.2vw;
   }
 
-  @media (max-width: $vp-320) {
-    grid-template-columns: repeat(auto-fill, 270px);
+  @media (max-width: $vp-1023) {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 3.91vw;
+  }
+
+  @media (max-width: $vp-767) {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
 
 .catalog li {
-  display: flex;
   min-height: 386px;
+  display: flex;
   overflow: hidden;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1023) {
     width: 309px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     width: 270px;
+  }
+}
+
+.catalog li:nth-child(odd) {
+
+  @media (max-width: $vp-1023) {
+  justify-self: flex-end;
+  }
+
+  @media (max-width: $vp-767) {
+    justify-self: center;
+    }
+}
+
+.catalog li:nth-child(even) {
+  @media (max-width: $vp-1023) {
+  justify-self: flex-start;
+  }
+
+  @media (max-width: $vp-767) {
+    justify-self: center;
   }
 }
 
@@ -67,12 +108,21 @@
   line-height: 27px;
   font-weight: 500;
   color: $color-default-white;
+
+  @media (max-width: $vp-1366) {
+  font-size: 1.32vw;
+  }
+
+  @media (max-width: $vp-1023) {
+    font-size: 18px;
+  }
 }
 
 .catalog__block--picture {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  min-height: 100%;
   background-color: $color-dark-blue;
 }
 
@@ -81,24 +131,25 @@
   left: 30px;
   bottom: 22px;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-1023) {
     left: 34px;
     bottom: 28px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     left: 25px;
     bottom: 18px;
   }
 }
 
 .catalog__block--picture img {
-  @media (max-width: $vp-768) {
+
+  @media (max-width: $vp-1023) {
     width: 309px;
     max-height: 386px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     width: 270px;
   }
 }
@@ -107,36 +158,39 @@
   @include flex;
   align-items: flex-start;
   flex-direction: column;
-  padding: 28px 25px;
-  padding-bottom: 35px;
-  padding-right: 14px;
-  font-size: calc(0.43vw + 8px);
+  font-size: 14px;
   line-height: 20px;
+  padding: 35px 25px;
   color: $color-default-white;
   background-color: $color-dark-blue;
 
-  @media (max-width: $vp-768) {
-    padding: 35px;
-    padding-top: 28px;
-    font-size: calc(0.8vw + 8px);
+  @media (max-width: $vp-1366) {
+    padding: 2vw 0.1vw 2.5vw 1.85vw;
+    font-size: calc(0.43vw + 8px);
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-1023) {
+    padding: 35px;
+    padding-top: 28px;
     font-size: 14px;
+  }
+
+  @media (max-width: $vp-767) {
     padding: 35px 26px;
     padding-top: 28px;
   }
 }
 
 .catalog__block--information h3 {
-  font-size: calc(0.59vw + 10px);
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
-  @media (max-width: $vp-768) {
-    font-size: calc(1.1vw + 10px);
+  @media (max-width: $vp-1366) {
+  margin-bottom: 1.05vw;
+  font-size: calc(0.59vw + 10px);
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-1023) {
+    margin-bottom: 13px;
     font-size: 18px;
   }
 }
@@ -157,15 +211,22 @@
 
 .catalog__block--information a {
   padding: 10px 47px;
+  font-size: 14px;
   font-weight: 600;
   background-color: $color-default-white;
 
-  @media (max-width: $vp-768) {
+  @media(max-width: $vp-1366) {
+    font-size: 1.03vw;
+    padding: 11px 3.5vw;
+  }
+
+  @media (max-width: $vp-1023) {
+    font-size: 14px;
     align-self: stretch;
     padding: 10px 60px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     padding: 10px 51px;
   }
 }

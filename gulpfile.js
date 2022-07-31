@@ -129,7 +129,8 @@ const optimizeImages = () => {
       .pipe(gulp.dest('build/img'));
 };
 
-const build = gulp.series(clean, svgo, copy, css, sprite, js, createWebp) //,optimizeImages);
+const build = gulp.series(clean, svgo, copy, css, sprite, js, createWebp)
+  //, optimizeImages);
 
 const start = gulp.series(build, syncServer);
 
