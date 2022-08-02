@@ -1,4 +1,5 @@
 .page-header {
+  position: relative;
   width: 100%;
   min-height: 39.35vw;
   background-color: $color-dark-blue;
@@ -53,6 +54,7 @@
   position: relative;
   width: 70px;
   height: 38px;
+  margin-right: 10px;
   fill: $color-default-white;
 
   @media (max-width: $vp-1023) {
@@ -61,6 +63,7 @@
   }
 
   @media (max-width: $vp-767) {
+    position: absolute;
     width: 42px;
     height: 22px;
   }
@@ -97,7 +100,7 @@
   display: block;
   z-index: 3;
   top: 0;
-  right: 15px;
+  right: 0;
 }
 
 .page-header__menu-opened button {

@@ -1,37 +1,68 @@
 .social {
-  width: 9.6%;
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
 
-  @media (max-width: $vp-767) {
-    width: 15%;
+  @media (max-width: $vp-1023) {
+    margin-left: 5px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
+    justify-content: flex-start;
     width: 100%;
+    margin: 0;
   }
 }
 
 .social ul {
-  @include flex;
-  flex-wrap: wrap;
-  width: 110px;
-
+  display: grid;
+  grid-template-columns: 38px 38px 38px;
+  gap: 10px;
   @include reset-list;
+
+  @media (max-width: $vp-1023) {
+    grid-template-columns: 30px 30px 30px;
+    gap: 8.5px;
+  }
 
   @media (max-width: $vp-767) {
     width: 100%;
+    grid-template-columns: repeat(auto-fill, 26.5px);
+    gap: 4px;
+  }
+}
+
+.social li {
+  @include flex;
+  justify-content: flex-end;
+  min-width: 38px;
+  height: 38px;
+  margin-right: 9px;
+
+  @media (max-width: $vp-1023) {
+    min-width: 31px;
+    height: 28px;
+    margin: 0;
   }
 
-  @media (max-width: $vp-320) {
-    width: 88px;
+  @media (max-width: $vp-767) {
+    justify-content: flex-start;
+    min-width: 26px;
+    height: 30px;
+  }
+}
+
+.social li:last-of-type {
+  margin-right: 0;
+
+  @media (max-width: $vp-767) {
+    justify-content: flex-end;
   }
 }
 
 .social a {
-  @include flex;
-  margin-left: 5px;
-  margin-bottom: 10px;
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     margin-left: 0;
   }
 }
@@ -41,7 +72,7 @@
 }
 
 .social svg {
-  @media (max-width: $vp-767) {
+  @media (max-width: $vp-1023) {
     transform: scale(0.8);
   }
 }

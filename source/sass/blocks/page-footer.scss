@@ -11,7 +11,7 @@
   padding-bottom: 38px;
 
 
-  @media (max-width: $vp-767) {
+  @media (max-width: $vp-1023) {
     justify-content: flex-start;
     align-items: flex-start;
     min-height: 120px;
@@ -19,13 +19,13 @@
     padding-bottom: 18px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
     min-height: 203px;
-    padding: 38px 15px;
+    padding: 39px 15px;
     padding-bottom: 28px;
   }
 }
@@ -33,7 +33,7 @@
 .page-footer__wrapper > a {
   margin-right: 30px;
 
-  @media (max-width: $vp-767) {
+  @media (max-width: $vp-1023) {
     margin-right: 3.3vw;
   }
 }
@@ -41,16 +41,17 @@
 .page-footer img {
   margin-bottom: 10px;
 
-  @media (max-width: $vp-767) {
+  @media (max-width: $vp-1023) {
     min-width: 38px;
     max-width: 38px;
     height: 20px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     min-width: 42px;
     max-width: 42px;
     height: 22px;
+    margin-bottom: 5px;
   }
 }
 
@@ -58,31 +59,31 @@
   min-width: 52%;
   margin-right: auto;
 
-  @media (max-width: $vp-767) {
+  @media (max-width: $vp-1023) {
+    min-width: 73.5%;
     max-width: 80%;
   }
 
-
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     display: block;
     width: 220px;
     margin: 0;
   }
 }
 
-
 .page-footer__navigation ul {
   justify-content: flex-start;
   width: 100%;
   margin-bottom: 10px;
+  padding: 0;
 
-  @media (max-width: $vp-767) {
+  @media (max-width: $vp-1023) {
     justify-content: flex-start;
     margin-top: -8px;
     margin-left: -10px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     margin: 0;
     margin-left: -5px;
     padding: 15px 0;
@@ -93,27 +94,26 @@
 }
 
 .page-footer__navigation li {
-  @media (max-width: $vp-767) {
+  @media (max-width: $vp-1023) {
     margin-bottom: 6px;
   }
 
-  @media (max-width: $vp-320) {
-    margin-bottom: 7px;
+  @media (max-width: $vp-767) {
+    margin: 0;
   }
 }
 
 .page-footer__navigation a {
+  font-size: calc(0.3vw + 12px);
   display: inline-block;
-  font-size: $fz-default;
 
-  @media (max-width: $vp-767) {
-    font-size: calc(1.05vw + 4px);
+  @media (max-width: $vp-1023) {
+    font-size: 12px;
     line-height: 15px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     font-size: 12px;
-    line-height: 15px;
     color: $color-default-white;
   }
 }

@@ -1,11 +1,16 @@
 .contacts__wrapper {
   @include flex;
   flex-direction: row-reverse;
+  padding-bottom: 79px;
 
-  @media (max-width: $vp-320) {
-    flex-direction: column-reverse;
+  @media (max-width: $vp-1023) {
+    padding: 83px 0;
+  }
+
+  @media (max-width: $vp-767) {
+    flex-direction: column;
     padding-top: 58px;
-    padding-bottom: 64px;
+    padding-bottom: 66px;
   }
 }
 
@@ -15,12 +20,13 @@
   height: 306px;
   margin-right: 10px;
 
-  @media (max-width: $vp-767) {
+  @media (max-width: $vp-1023) {
     width: 48%;
     height: 335px;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
+    align-self: stretch;
     width: 100%;
     height: 316px;
   }
@@ -30,21 +36,27 @@
   display: block;
   max-width: 100%;
   height: 100%;
+
+  @media (max-width: $vp-767) {
+    min-width: 100%;
+  }
 }
 
 .contacts__information {
+  padding-top: 40px;
   width: 43%;
-  padding: 3.3vw 0;
-  padding-bottom: 0;
 
-  @media (max-width: $vp-767) {
-    align-self: flex-start;
-    width: 48%;
-    padding: 8.5vw 0;
-    padding-bottom: 0;
+  @media (max-width: $vp-1366) {
+    padding: 5.5vw 0;
   }
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-1023) {
+    align-self: flex-start;
+    width: 48%;
+    padding-top: 83px;
+  }
+
+  @media (max-width: $vp-767) {
     width: 100%;
     padding: 0;
   }
@@ -57,15 +69,15 @@
   line-height: 27px;
   font-weight: 500;
 
-  @media (max-width: $vp-767) {
-    margin-bottom: 3.5vw;
-    font-size: calc(1.05vw + 10px);
+  @media (max-width: $vp-1023) {
+    margin-bottom: 28px;
+    padding-right: 25px;
+    font-size: 18px;
   }
 
-  @media (max-width: $vp-320) {
-    width: 280px;
+  @media (max-width: $vp-767) {
+    width: 100%;
     margin-bottom: 27px;
-    font-size: 18px;
   }
 }
 
@@ -76,11 +88,7 @@
   @include background;
   background-position: 50% left;
 
-  @media (max-width: $vp-767) {
-    font-size: calc(1.05vw + 8px);
-  }
-
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-1023) {
     font-size: 16px;
   }
 }
@@ -91,8 +99,8 @@
   background-image: url("../img/svg/address-icon.svg");
   background-size: 18px 22px;
 
-  @media (max-width: $vp-767) {
-    margin-bottom: 22px;
+  @media (max-width: $vp-1023) {
+    margin-bottom: 21px;
     background-position: top 15% left;
   }
 }
@@ -105,7 +113,7 @@
   background-size: 18px 18px;
   background-position: top 52% left;
 
-  @media (max-width: $vp-320) {
+  @media (max-width: $vp-767) {
     margin-bottom: 35px;
   }
 }
@@ -113,7 +121,7 @@
 .contacts br {
   display: none;
 
-  @media (max-width: $vp-767) {
+  @media (max-width: $vp-1023) {
     display: block;
   }
 }
