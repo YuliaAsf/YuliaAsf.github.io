@@ -101,4 +101,9 @@
   @media (max-width: $vp-1023) {
     object-fit: cover;
   }
+
+  @media (max-width: $vp-767) {
+    width: 290px;
+    height: 186px;
+  }
 }

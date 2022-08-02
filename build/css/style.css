@@ -1909,6 +1909,11 @@ form.reservation-form br {
     margin: 0 auto;
   }
 
+  .description img {
+    width: 290px;
+    height: 186px;
+  }
+
   .advantages h2 {
     margin-bottom: 35px;
     font-size: 24px;
