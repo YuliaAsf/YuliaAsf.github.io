@@ -134,7 +134,7 @@
     width: 60px;
     height: 60px;
     background-color: $color-light-blue;
-    background-image: url("/../img/svg/arrow.svg");
+    background-image: url("../img/svg/arrow.svg");
     @include background;
     background-size: 20px 10px;
     content: "";
@@ -156,73 +156,73 @@
 }
 
 .goods__item--1 a{
-  background-image: url("/../img/pictures/goods-card-1.png");
+  background-image: url("../img/pictures/goods-card-1.png");
 
   @media (min-width: 1024px) and (min-resolution: 2dppx) {
-    background-image: url("/../img/pictures/goods-card-1@2x.png");
+    background-image: url("../img/pictures/goods-card-1@2x.png");
   }
 
   @media(max-width: $vp-1023) {
-    background-image: url("/../img/pictures/goods-card-1-tablet.png");
+    background-image: url("../img/pictures/goods-card-1-tablet.png");
 
   @media (max-width: $vp-1023) and (min-resolution: 2dppx) {
-      background-image: url("/../img/pictures/goods-card-1-tablet@2x.png");
+      background-image: url("../img/pictures/goods-card-1-tablet@2x.png");
       }
 
     @media(max-width: $vp-767) {
-      background-image: url("/../img/pictures/goods-card-1-mobile.png");
+      background-image: url("../img/pictures/goods-card-1-mobile.png");
     }
 
     @media (max-width: $vp-767) and (min-resolution: 2dppx) {
-      background-image: url("/../img/pictures/goods-card-1-mobile@2x.png")
+      background-image: url("../img/pictures/goods-card-1-mobile@2x.png")
     }
   }
 }
 
 .goods__item--2 a {
-  background-image: url("/../img/pictures/goods-card-2.png");
+  background-image: url("../img/pictures/goods-card-2.png");
 
   @media (min-width: 1024px) and (min-resolution: 2dppx) {
-    background-image: url("/../img/pictures/goods-card-2@2x.png")
+    background-image: url("../img/pictures/goods-card-2@2x.png")
   }
 
   @media(max-width: $vp-1023) {
-    background-image: url("/../img/pictures/goods-card-2-tablet.png");
+    background-image: url("../img/pictures/goods-card-2-tablet.png");
   }
 
   @media (max-width: $vp-1023) and (min-resolution: 2dppx) {
-    background-image: url("/../img/pictures/goods-card-2-tablet@2x.png")
+    background-image: url("../img/pictures/goods-card-2-tablet@2x.png")
   }
 
   @media(max-width: $vp-767) {
-    background-image: url("/../img/pictures/goods-card-2-mobile.png");
+    background-image: url("../img/pictures/goods-card-2-mobile.png");
   }
 
   @media (max-width: $vp-767) and (min-resolution: 2dppx) {
-    background-image: url("/../img/pictures/goods-card-2-mobile@2x.png")
+    background-image: url("../img/pictures/goods-card-2-mobile@2x.png")
   }
 }
 
 .goods__item--3  a{
-  background-image: url("/../img/pictures/goods-card-3.png");
+  background-image: url("../img/pictures/goods-card-3.png");
 
   @media (min-width: 1024px) and (min-resolution: 2dppx) {
-    background-image: url("/../img/pictures/goods-card-3@2x.png")
+    background-image: url("../img/pictures/goods-card-3@2x.png")
   }
 
   @media(max-width: $vp-1023) {
-    background-image: url("/../img/pictures/goods-card-3-tablet.png");
+    background-image: url("../img/pictures/goods-card-3-tablet.png");
   }
 
   @media (max-width: $vp-1023) and (min-resolution: 2dppx) {
-    background-image: url("/../img/pictures/goods-card-3-tablet@2x.png")
+    background-image: url("../img/pictures/goods-card-3-tablet@2x.png")
   }
 
   @media(max-width: $vp-767) {
-    background-image: url("/../img/pictures/goods-card-3-mobile.png");
+    background-image: url("../img/pictures/goods-card-3-mobile.png");
   }
 
   @media (max-width: $vp-767) and (min-resolution: 2dppx) {
-    background-image: url("/../img/pictures/goods-card-3-mobile@2x.png")
+    background-image: url("../img/pictures/goods-card-3-mobile@2x.png")
   }
 }
