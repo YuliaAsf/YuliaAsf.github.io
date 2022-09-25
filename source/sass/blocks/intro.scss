@@ -7,10 +7,10 @@
   border-top: 1px solid $color-default-black;
   background-color: $color-dark-blue;
   @include background;
-  background-image: url("../img/pictures/background.png");
+  background-image: url("../../img/pictures/background.png");
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/pictures/background@2x.png")
+    background-image: url("../../img/pictures/background@2x.png")
   }
 
   @media (max-width: $vp-1023) {
