@@ -121,7 +121,7 @@ const createWebp = () => {
 };
 
 const optimizeImages = () => {
-  return gulp.src('build/img/**/*.{png,jpg}')
+  return gulp.src('source/img/**/*.{png,jpg}')
       .pipe(imagemin([
         imagemin.optipng({optimizationLevel: 3}),
         imagemin.mozjpeg({quality: 75, progressive: true}),
@@ -129,7 +129,7 @@ const optimizeImages = () => {
       .pipe(gulp.dest('build/img'));
 };
 
-const build = gulp.series(clean, svgo, copy, css, sprite, js, createWebp, optimizeImages);
+const build = gulp.series(clean, svgo, copy, css, sprite, js, createWebp)//optimizeImages);
 
 const start = gulp.series(build, syncServer);
 

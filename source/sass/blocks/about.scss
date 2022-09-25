@@ -1,0 +1,90 @@
+.about__container {
+  padding: 60px 350px;
+  padding-bottom: 120px;
+  padding-left: 600px;
+  @include background;
+  background-image: url("/../img/svg/year.svg");
+  background-size: 640px 320px;
+  background-position: top 60px left 105px;
+
+  @media (max-width: $vp-1676) {
+    padding: 60px 200px;
+    padding-left: 600px;
+  }
+
+  @media (max-width: $vp-1400) {
+    padding: 60px 140px;
+    padding-left: 400px;
+    background-position: top 60px left -100px;
+  }
+
+  @media (max-width: $vp-1023) {
+    padding: 51px 50px;
+    padding-left: 225px;
+    padding-bottom: 80px;
+    background-position: top 56px left -200px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 16px 25px;
+    padding-bottom: 81px;
+    background-image: none;
+  }
+}
+
+.about h2 {
+  margin: 0;
+  margin-bottom: 12px;
+  font-family: $ff-secondary;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+
+  @media (max-width: $vp-767) {
+    font-size: 28px;
+    line-height: 40px;
+
+  }
+}
+
+.about p {
+  margin: 0;
+  margin-bottom: 21px;
+
+  @media (max-width: $vp-767) {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 19px;
+  }
+}
+
+.about button {
+  width: 180px;
+  margin-top: 20px;
+  padding: 12px;
+  font-family: $ff-secondary;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: $color-light-blue;
+  text-transform: uppercase;
+  @include button;
+  outline: 1px solid $color-light-blue;
+  border-radius: 3px;
+
+  @media (max-width: $vp-1023) {
+    margin-top: -2px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 160px;
+    padding: 8px 10px;
+    padding-top: 4px;
+    margin-top: -15px;
+  }
+
+  &:focus {
+    outline: 2px solid orange;
+  }
+}

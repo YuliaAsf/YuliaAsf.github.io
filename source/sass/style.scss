@@ -2,37 +2,33 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
 // Swiper 7.4.1
 // @import "vendor/swiper";
 
 // Global
 // ---------------------------------
-
-@import "variables";
-@import "mixins";
-@import "global/fonts";
-@import "global/reboot";
-@import "global/utils";
+@import "variables/variables";
 @import "global/container";
+@import "global/reboot";
+@import "global/fonts";
+@import "global/utils";
+@import "mixins/mixins";
+
+
 
 // Blocks
 // ---------------------------------
-
-@import "blocks/btn";
-@import "blocks/page-header";
-@import "blocks/navigation";
-@import "blocks/page-main";
-@import "blocks/intro";
-@import "blocks/description";
-@import "blocks/advantages";
-@import "blocks/reservation";
-@import "blocks/reservation-form";
-@import "blocks/contacts";
-@import "blocks/catalog";
-@import "blocks/page-footer";
-@import "blocks/social";
-
-
+@import "blocks/page-header.scss";
+@import "blocks/intro.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/advantages.scss";
+@import "blocks/about.scss";
+@import "blocks/goods.scss";
+@import "blocks/form.scss";
+@import "blocks/feedback.scss";
+@import "blocks/overlay.scss";
+@import "blocks/modal.scss";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg

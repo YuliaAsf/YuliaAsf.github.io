@@ -1,0 +1,228 @@
+.goods {
+  font-family: $ff-secondary;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: $color-dark-blue;
+}
+
+.goods__container {
+  min-height: 740px;
+  padding: 65px 350px;
+  padding-bottom: 139px;
+
+  @media (max-width: $vp-1676) {
+    padding: 70px 110px;
+    padding-bottom: 140px;
+  }
+
+  @media (max-width: $vp-1023) {
+    padding: 55px 50px;
+    padding-bottom: 75.5px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 45px 25px;
+    padding-bottom: 85px;
+  }
+}
+
+.goods h2 {
+  margin: 0;
+  margin-bottom: 55px;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: 38px;
+  }
+
+  @media (max-width: $vp-767) {
+    display: none;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+.goods h2 + h2 {
+  display: none;
+
+  @media (max-width: $vp-767) {
+    display: block;
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 18px;
+  }
+}
+
+.goods ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 85px;
+  @include reset-list;
+
+  @media (max-width: $vp-1676) {
+    gap: 40px;
+
+  @media (max-width: $vp-1023) {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    }
+  }
+}
+
+.goods li {
+  position: relative;
+  min-height: 600px;
+  padding: 25px 40px;
+  background-color: #0000ff;
+
+  @media (max-width: $vp-1023) {
+    min-height: 200px;
+  }
+
+  @media (max-width: $vp-767) {
+    min-height: 200px;
+    width: 190px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.goods h3 {
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  z-index: 2;
+  width: 170px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+
+  @media (max-width: $vp-1023) {
+    top: 17px;
+    left: 45px;
+    width: 150px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 135px;
+    top: 7px;
+    left: 30px;
+    font-size: 18px;
+    line-height: 30px;
+
+  }
+}
+
+.goods a {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    background-color: $color-light-blue;
+    background-image: url("/../img/svg/arrow.svg");
+    @include background;
+    background-size: 20px 10px;
+    content: "";
+
+    @media (max-width: $vp-767) {
+      width: 40px;
+      height: 40px;
+      background-size: 8px 7px;
+      bottom: 1px;
+      right: 0;
+    }
+  }
+}
+
+
+.goods__item a {
+  @include background;
+  background-position: center 10px center;
+}
+
+.goods__item--1 a{
+  background-image: url("/../img/pictures/goods-card-1.png");
+
+  @media (min-width: 1024px) and (min-resolution: 2dppx) {
+    background-image: url("/../img/pictures/goods-card-1@2x.png");
+  }
+
+  @media(max-width: $vp-1023) {
+    background-image: url("/../img/pictures/goods-card-1-tablet.png");
+
+  @media (max-width: $vp-1023) and (min-resolution: 2dppx) {
+      background-image: url("/../img/pictures/goods-card-1-tablet@2x.png");
+      }
+
+    @media(max-width: $vp-767) {
+      background-image: url("/../img/pictures/goods-card-1-mobile.png");
+    }
+
+    @media (max-width: $vp-767) and (min-resolution: 2dppx) {
+      background-image: url("/../img/pictures/goods-card-1-mobile@2x.png")
+    }
+  }
+}
+
+.goods__item--2 a {
+  background-image: url("/../img/pictures/goods-card-2.png");
+
+  @media (min-width: 1024px) and (min-resolution: 2dppx) {
+    background-image: url("/../img/pictures/goods-card-2@2x.png")
+  }
+
+  @media(max-width: $vp-1023) {
+    background-image: url("/../img/pictures/goods-card-2-tablet.png");
+  }
+
+  @media (max-width: $vp-1023) and (min-resolution: 2dppx) {
+    background-image: url("/../img/pictures/goods-card-2-tablet@2x.png")
+  }
+
+  @media(max-width: $vp-767) {
+    background-image: url("/../img/pictures/goods-card-2-mobile.png");
+  }
+
+  @media (max-width: $vp-767) and (min-resolution: 2dppx) {
+    background-image: url("/../img/pictures/goods-card-2-mobile@2x.png")
+  }
+}
+
+.goods__item--3  a{
+  background-image: url("/../img/pictures/goods-card-3.png");
+
+  @media (min-width: 1024px) and (min-resolution: 2dppx) {
+    background-image: url("/../img/pictures/goods-card-3@2x.png")
+  }
+
+  @media(max-width: $vp-1023) {
+    background-image: url("/../img/pictures/goods-card-3-tablet.png");
+  }
+
+  @media (max-width: $vp-1023) and (min-resolution: 2dppx) {
+    background-image: url("/../img/pictures/goods-card-3-tablet@2x.png")
+  }
+
+  @media(max-width: $vp-767) {
+    background-image: url("/../img/pictures/goods-card-3-mobile.png");
+  }
+
+  @media (max-width: $vp-767) and (min-resolution: 2dppx) {
+    background-image: url("/../img/pictures/goods-card-3-mobile@2x.png")
+  }
+}

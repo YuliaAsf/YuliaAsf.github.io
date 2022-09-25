@@ -1,0 +1,30 @@
+// Colors
+$color-default-black:               #041827;
+$color-default-white:               #ffffff;
+$color-default-grey:                #f2f5f6;
+$color-dark-blue:                   #041827;
+$color-light-blue:                  #00b2ff;
+$color-blue-muted:                  #026593;
+
+// Typography
+$fz-default:                        16px;
+$lh-default:                        21.6px;
+$ff-default:                        "PT Mono", "Courier New", monospace;
+$ff-secondary:                      "Roboto Condensed", "Tahoma", sans-serif;
+
+// Animation
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
+
+// Viewports
+$vp-320:                            320px;
+$vp-767:                            767.9px;
+$vp-770:                            770px;
+$vp-1023:                           1023.9px;
+$vp-1400:                           1400px;
+$vp-1676:                           1676px;
+$vp-1920:                           1920px;
+
+// Retina
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

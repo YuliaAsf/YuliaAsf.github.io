@@ -1,21 +1,11 @@
-.wrapper {
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  /* stylelint-disable-next-line */
-  min-height: calc(100 * var(--vh, 1vh));
-
-  .header,
-  .footer {
+  .page-header,
+  .page-footer {
     flex-shrink: 0;
   }
 
-  main {
+  .page-main {
     flex-grow: 1;
   }
-}
 
 .visually-hidden {
   position: absolute;
@@ -30,30 +20,6 @@
   clip-path: inset(100%);
 }
 
-.scroll-lock-ios {
-  position: fixed;
-  overflow: hidden;
-}
-
-.scroll-lock {
-  overflow: hidden;
-}
-
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-.no-transition {
-  /* stylelint-disable-next-line */
-  transition: none !important;
-}
-
-.no-scrolling {
-  height: 100vh;
-  overflow: hidden;
+:disabled {
+  opacity: 0.2;
 }
