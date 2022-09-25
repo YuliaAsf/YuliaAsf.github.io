@@ -820,11 +820,11 @@ button:focus {
 }
 
 .page-footer__button--close::before {
-  background-image: url("/../img/svg/plus.svg");
+  background-image: url("../img/svg/plus.svg");
 }
 
 .page-footer__button--open::before {
-  background-image: url("/../img/svg/minus.svg");
+  background-image: url("../img/svg/minus.svg");
 }
 
 .page-footer__navigation {
@@ -905,21 +905,21 @@ button:focus {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("/../img/svg/pinterest.svg");
+  background-image: url("../img/svg/pinterest.svg");
 }
 
 .page-footer__link--ok {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("/../img/svg/odnoklassniki.svg");
+  background-image: url("../img/svg/odnoklassniki.svg");
 }
 
 .page-footer__link--vk {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("/../img/svg/vkontakte.svg");
+  background-image: url("../img/svg/vkontakte.svg");
 }
 
 .page-footer__social-wrapper span {
@@ -1368,7 +1368,7 @@ form .feedback-form__label input:checked + span::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/../img/svg/tick.svg");
+  background-image: url("../img/svg/tick.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1447,7 +1447,7 @@ form .feedback-form__label input:focus + span::after {
   z-index: 2;
   width: 20px;
   height: 20px;
-  background-image: url("/../img/svg/close-icon.svg");
+  background-image: url("../img/svg/close-icon.svg");
   content: "";
 }
 
@@ -1525,7 +1525,7 @@ form .modal-form__input-isagree:checked + span::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/../img/svg/tick.svg");
+  background-image: url("../img/svg/tick.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -2339,6 +2339,6 @@ form .modal-form__input-isagree:focus + span::after {
   }
 
   .feedback__container::before {
-    background-image: url("/../img/pictures/airplane@2x.png");
+    background-image: url("../img/pictures/airplane@2x.png");
   }
 }

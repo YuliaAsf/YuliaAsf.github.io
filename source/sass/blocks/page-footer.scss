@@ -165,13 +165,13 @@
 
 .page-footer__button--close {
   &::before {
-  background-image: url("/../img/svg/plus.svg");
+  background-image: url("../img/svg/plus.svg");
   }
 }
 
 .page-footer__button--open {
   &::before {
-  background-image: url("/../img/svg/minus.svg");
+  background-image: url("../img/svg/minus.svg");
   }
 }
 
@@ -278,17 +278,17 @@
 
 .page-footer__link--pinterest {
   @include background;
-  background-image: url("/../img/svg/pinterest.svg");
+  background-image: url("../img/svg/pinterest.svg");
 }
 
 .page-footer__link--ok {
   @include background;
-  background-image: url("/../img/svg/odnoklassniki.svg");
+  background-image: url("../img/svg/odnoklassniki.svg");
 }
 
 .page-footer__link--vk{
   @include background;
-  background-image: url("/../img/svg/vkontakte.svg");
+  background-image: url("../img/svg/vkontakte.svg");
 }
 
 
